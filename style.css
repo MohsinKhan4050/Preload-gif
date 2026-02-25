@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondry-color: #212121;
+}
+
+header {
+    width: 100%;
+    min-height: 100vh;
+
+}
+
+.Navbar {
+    display: flex;
+    width: 100%;
+    max-width: 80%;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.navbarMenu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-align: right;
+    text-align: right;
+    float: right;
+}
+
+.navbarMenu {
+    flex: 1;
+}
+
+
+
+.navbarMenu ul li a {
+    color: var(--secondry-color);
+    text-decoration: none;
+}
+
+.hero-details .hero-img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hero-section {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.hero-details {
+    flex: 1 1 calc((100% / 2) - 20px);
+}
+
+.hero-details h1 {
+    font-size: 50px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    color: var(--secondry-color);
+
+}
+
+.hero-section p {
+    color: var(--secondry-color);
+}
+
+.hero-section h1 span {
+    color: red;
+}
+
+.download-btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--secondry-color);
+    color: var(--primary-color);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 70px;
+    color: var(--secondry-color);
+}
+
+.icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.preloader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background: var(--secondry-color) url(images/e26300c0c746d3163a0f48223c897cee.gif) center center no-repeat;
+    background-size: 300px;
+}
